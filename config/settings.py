@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-u305s&i#sw1zlagix46bv0&jwafma6lv^5q3t6!19sqhe7oae%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["Xojiakbar347.pythonanywhere.com","127.0.0.1","xojiakbar347.pythonanywhere.com"]
 
 
 # Application definition
@@ -72,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Wargraft347.pythonanywhere.com'
+WSGI_APPLICATION ='config.wsgi.application'
 
 
 # Database
