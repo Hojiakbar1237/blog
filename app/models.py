@@ -81,13 +81,13 @@ class Category(BaseModel):
     def __str__(self):
         return self.name
 
-
 class Project(BaseModel):
     name = models.CharField(max_length=255)
     link = models.URLField()
     discription = models.TextField()
     used_tools = models.ManyToManyField(Tool)
     categories = models.ManyToManyField(Category)
+    image = models.ImageField(upload_to="projects/",null=True,blank=True)
 
     def __str__(self):
         return self.name
